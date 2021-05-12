@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Hamza's Hobbies Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Hobbies</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Hamza Riaz Chaudhry
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/bodybuilding.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <!--<img src="images/logos/quip.png" alt="">-->
+            </div>
+
+            <div class="subtitle">I LOVE TO WORKOUT.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/hamza.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             <!-- <img src="images/logos/devcamp.png" alt="">-->
+            </div>
+
+            <div class="subtitle">Photoghrapy is one of my favorite hobby!</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/book.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             <!---- <img src="images/logos/eventbrite.png" alt="">-->
+            </div>
+
+            <div class="subtitle">I like to read novels and articles </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/gathering.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             <!-- <img src="images/logos/shop-hacker.png" alt="">-->
+            </div>
+
+            <div class="subtitle">I am a quite socialize person who loves to hangout.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/parties.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <!--<img src="images/logos/crondose.png" alt="">-->
+            </div>
+
+            <div class="subtitle">Love to party!</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/dating.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             <!-- <img src="images/logos/dailysmarty.png" alt="">-->
+            </div>
+
+            <div class="subtitle">Dating and still finding a partner XD</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/gaming.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <!--<img src="images/logos/dashtrack.png" alt="">-->
+            </div>
+
+            <div class="subtitle">Playing Videogames </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="social-wrapper">
+    <ul>
+      <!--<li>
+        <a href="#" target="_blank">
+          <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+      </li>-->
+      <li>
+        <a href="#" target="_blank">
+          <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+      </li>
+      <!--<li>
+        <a href="#" target="_blank">
+          <img src="https://www.columbia.edu/~ml3720/linkedin.jpg" alt="Linkedin Logo" class="linkedin-icon"></a>
+      </li>-->
+      <li>
+        <a href="#" target="_blank">
+          <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+      </li>
+      <!--<li>
+        <a href="#" target="_blank">
+          <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+      </li>-->
+      
+      
+    </ul>
+  </div>
+</footer>
+</html>
